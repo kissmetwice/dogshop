@@ -1,0 +1,57 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+  <meta charset="UTF-8">
+  <meta http-equiv="X-UA-Compatible" content="IE=edge">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Cadastro de clientes</title>
+  <link rel="stylesheet" href="/cadastros/css/cadastrocao.css">
+</head>
+
+<body>
+  <div class="box">
+    <form action="">
+      <fieldset>
+        <legend><b>Cadastro</b></legend>
+        <br>
+        <div class="inputBox">
+          <input type="text" name="nome" id="nome" class="inputUser" required>
+          <label for="nome" class="labelInput">Nome completo</label>
+        </div>
+        <br><br>
+        <div class="inputBox">
+          <input type="text" name="email" id="email" class="inputUser" required>
+          <label for="email" class="labelInput">Email</label>
+        </div>
+        <br><br>
+        <div class="inputBox">
+          <input type="tel" name="telefone" id="telefone" class="inputUser" required>
+          <label for="telefone" class="labelInput">Telefone</label>
+        </div>
+        <p>Sexo:</p>
+        <input type="radio" id="feminino" name="gênero" value="feminino">
+        <label for="feminino">Feminino</label>
+        <br>
+        <input type="radio" id="masculino" name="gênero" value="masculino">
+        <label for="masculino">Masculino</label>
+        <br>
+        <input type="radio" id="outro" name="gênero" value="outro">
+        <label for="outro">Outro</label>
+        <br><br>
+        <label for="data_nasc"><b>Data de nascimento:</b></label>
+        <input type="date" name="data_nasc" id="data_nasc" required>
+        <br><br><br>
+        <div class="inputBox">
+          <input type="text" name="end" id="end" class="inputUser" required>
+          <label for="end" class="labelInput">Endereço</label>
+        </div>
+        <br><br>
+        <form id="myForm" method="post">
+          <input type="submit" name="submit" id="submit" value="Enviar"
+            formaction="/redirecionamento/redirecionarcao.html">
+        </form>
+      </fieldset>
+    </form>
+  </div>
+</body>
